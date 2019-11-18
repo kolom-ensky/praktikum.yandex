@@ -26,18 +26,16 @@ data = [
 # Напечатайте их значения на экране.
 
 emojixpress_total = 0
+instagram_total = 0
+twitter_total = 0
+
 for row in data:
     emojixpress_total += row[1]
-emojixpress_mean = emojixpress_total / len(data)
-
-instagram_total = 0
-for row in data:
     instagram_total += row[2]
-instagram_mean = instagram_total / len(data)
-
-twitter_total = 0
-for row in data:
     twitter_total += row[3]
+
+emojixpress_mean = emojixpress_total / len(data)
+instagram_mean = instagram_total / len(data)
 twitter_mean = twitter_total / len(data)
 
 print('Среднее для EmojiXpress: {:.2f}'.format(emojixpress_mean))
